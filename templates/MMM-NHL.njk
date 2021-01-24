@@ -44,27 +44,27 @@
                     </td>
                     {% if config.showNames %}
                         <td class="align-right">
-                            {{ games[index].teams.home.short }}
+                            {{ games[index].teams.home.shortCode }}
                         </td>
                     {% endif %}
                     {% if config.showLogos %}
                         <td>
                             <img class="icon {{ "no-color" if not config.colored }}"
-                                 src="https://assets.nhle.com/logos/nhl/svg/{{ games[index].teams.home.short }}_dark.svg"/>
+                                 src="https://assets.nhle.com/logos/nhl/svg/{{ games[index].teams.home.shortCode }}_dark.svg"/>
                         </td>
                     {% endif %}
                     <td>{{ games[index].teams.home.score }}</td>
                     <td>:</td>
                     <td>{{ games[index].teams.away.score }}</td>
                     {% if config.showLogos %}
-                        <td>
+                       <td>
                             <img class="icon {{ "no-color" if not config.colored }}"
-                                 src="https://assets.nhle.com/logos/nhl/svg/{{ games[index].teams.away.short }}_dark.svg"/>
+                                 src="https://assets.nhle.com/logos/nhl/svg/{{ games[index].teams.away.shortCode }}_dark.svg"/>
                         </td>
                     {% endif %}
                     {% if config.showNames %}
                         <td class="align-left">
-                            {{ games[index].teams.away.short }}
+                            {{ games[index].teams.away.shortCode }}
                         </td>
                     {% endif %}
                 </tr>
