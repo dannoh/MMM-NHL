@@ -26,8 +26,8 @@
                         {% elif games[index].status.abstract === "Preview" %}
                             {{ games[index] | formatStartDate }}
                         {% elif games[index].status.abstract === "Live" and games[index].live.period %}
-                            <div class="live">{{ games[index].live.period | translate }}</div>
                             <div class="live">
+                                {{ games[index].live.period | translate }}
                                 {% if games[index].live.timeRemaining === "Final" %}
                                     {{ "FINAL" | translate }}
                                 {% else %}

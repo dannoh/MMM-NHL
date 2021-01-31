@@ -1,5 +1,11 @@
 # MMM-NHL Changelog
 
+## [2.0.1]
+
+### Changed
+
+* Changed english layout and size for live game time.
+
 ## [2.0.0]
 
 ### Added
